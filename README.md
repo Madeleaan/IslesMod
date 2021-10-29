@@ -9,7 +9,7 @@
 [![workflow status](https://img.shields.io/github/workflow/status/TomEngMaster/IslesMod/Build/master?label=Workflow%20status&style=for-the-badge&logo=github&logocolor=white)](https://github.com/TomEngMaster/IslesMod)
 </div>
 
-IslesMod is a mod that adds QOL features for Skyblock Isles.
+IslesMod is a fabric mod that adds QOL features for Skyblock Isles.
 
 ## Features
 - Discord RPC
