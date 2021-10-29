@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "islesmod",
+  "version": "${version}",
+
+  "name": "Isles Mod",
+  "description": "Mod to enhance SkyBlock Isles server experience.",
+  "authors": [
+    "TomEngMaster"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "net.tomengmaster.islesmod.IslesMod"
+    ]
+  },
+  "mixins": [
+    "islesmod.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
