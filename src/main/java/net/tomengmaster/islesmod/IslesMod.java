@@ -90,10 +90,12 @@ public class IslesMod implements ModInitializer {
 			if(rpCount == 5) {
 				if(Utils.onIsles()) {
 					List<String> lines = Utils.getScoreboard();
-					if (lines.get(1).startsWith("Rank: ")) {
-						updateRPC(lines.get(2), lines.get(3));
-					} else {
-						updateRPC(lines.get(1).replace(" ⦿", ": "), lines.get(2));
+					if(lines.size() >= 1) { // Scoreboard doesn't exist sometimes
+						if (lines.get(1).startsWith("Rank: ")) {
+							updateRPC(lines.get(2), lines.get(3));
+						} else {
+							updateRPC(lines.get(1).replace(" ⦿", ": "), lines.get(2));
+						}
 					}
 				}
 			}
